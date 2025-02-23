@@ -7,10 +7,17 @@ label{
 }
 
 section.sort-by{
-    flex: 1 1 40%;  /*these are the Sort By and Sort Direction panels*/
+    flex: 1 1 calc(50% - 10px);  /*these are the Sort By and Sort Direction panels*/
 }
 
 section{
     flex: 1 1 calc(25% - 10px); /* must be smaller than 1/4 so four columns can fit*/
     margin: 5px;
+    min-width: 250px;
+}
+
+@media (max-width: 800px) {
+    section.sort-by {
+        flex: 1 1 100%;
+    }
 }
