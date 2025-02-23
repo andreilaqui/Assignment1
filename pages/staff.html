@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="..\styles\style.css">
+    <link rel="stylesheet" href="..\styles\staff.css">
+
+    <script src="..\scripts\index.js" defer></script>
+    <script src="..\scripts\staff.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1>STAFF</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="..\index.html">Home</a></li>
+            <li><a href="mark.html">Mark to Grade Converter</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="weather.html">Weather</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sort-by">
+            <h2>Sort By</h2>
+            <input type="radio" id="sort-by-name" name="sort-by" value="name" class="sort-option" checked>
+            <label for="sort-by-name">Name</label>
+            <input type="radio" id="sort-by-salary" name="sort-by" value="salary" class="sort-option">
+            <label for="sort-by-salary">Salary</label>
+            <input type="radio" id="sort-by-hiredate" name="sort-by" value="hiredate" class="sort-option">
+            <label for="sort-by-hiredate">Hire Date</label>
+            <input type="radio" id="sort-by-city" name="sort-by" value="city" class="sort-option">
+            <label for="sort-by-city">City</label>
+        </section>
+        <section class="sort-by">
+            <h2>Sort Direction</h2>
+            <input type="radio" id="sort-asc" name="sort-dir" value="Ascending"  class="sort-option"checked>
+            <label for="sort-asc">Ascending</label>
+            <input type="radio" id="sort-desc" name="sort-dir" value="Descending" class="sort-option">
+            <label for="sort-desc">Descending</label>
+        </section>
+        <article>
+            
+        </article>
+    </main>
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/andrei-laqui-28a717311" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="Andrei Laqui at LinkedIn"></a>
+            <a href="https://www.instagram.com/dreilaqui" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Andrei Laqui in Instagram"></a>
+        <a href="https://www.facebook.com/dreilaqui" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Andrei Laqui in Facebook"></a>
+        <a href="https://flic.kr/ps/zbq8h" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/flickr.png" alt="Andrei Laqui in Flickr"></a>
+        <a href="mailto:dreilaqui@yahoo.com">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email Andrei Laqui">
+        </a>
+        <p>&copy; <span id="current-date"></span> Andrei Laqui. All rights reserved.</p>
+    </footer>
+</body>
+</html>
